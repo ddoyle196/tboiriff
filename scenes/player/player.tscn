@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=3 uid="uid://bc62q08dtmphe"]
+
+[ext_resource type="Texture2D" uid="uid://cs7hl3di57ym" path="res://sprites/PC Computer - The Binding of Isaac Rebirth - Isaac.png" id="1_qod7o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_acwe1"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(8, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex0hr"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(40, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gprjw"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(72, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kxaj"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(104, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01c4w"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(136, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvi5g"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(168, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykbcq"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(200, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qa03j"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(232, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56dl5"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(264, 114, 32, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nxne"]
+atlas = ExtResource("1_qod7o")
+region = Rect2(296, 114, 32, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_al0jn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_acwe1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ex0hr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gprjw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kxaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01c4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvi5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykbcq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qa03j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56dl5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nxne")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Player" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(49, 43)
+scale = Vector2(2.99138, 2.99138)
+sprite_frames = SubResource("SpriteFrames_al0jn")
+frame_progress = 0.825615
